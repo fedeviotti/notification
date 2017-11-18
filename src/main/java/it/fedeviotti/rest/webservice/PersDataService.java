@@ -75,7 +75,7 @@ public class PersDataService {
 
 	}
 
-	// Metodo di salvataggio di nuovi record a fronte di una chiamata POST
+	//metodo di invio notifica
 	@POST
 	@Path("notification/push")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -94,7 +94,8 @@ public class PersDataService {
 		queryParams.add("title", "Titolo");
 		queryParams.add("body", "Corpo del testo");
 		queryParams.add("iden", "ujyx8OA2x6OsjAiVsKnSTs");
-
+		
+		//FUNZIONA, invia notifica a device indicato da iden
 		try {
 			return Client.create().resource("https://api.pushbullet.com/v2/pushes")
 					.accept(MediaType.APPLICATION_JSON)
