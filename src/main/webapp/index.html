@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://localhost:8081/notification/rest/users/add" method="POST">
+		<fieldset>
+			<legend>Insert user:</legend>
+			<label for="username">Username</label>
+			<input type="text" name="username"/>
+			<label for="accessToken">Access Token</label>
+			<input type="text" name="accessToken" value="o.LCGcUVrNpgSKWNQ7MRrt6Ny1NGaKAtL9"/>
+			<input type="submit" value="Submit"/>
+		</fieldset>
+		
+	</form>
+	<div>
+		<a href="http://localhost:8081/notification/rest/users">Get all users</a>
+	</div>
+	
+	<form action="http://localhost:8081/notification/rest/users/notification/push" method="POST">
+		<fieldset>
+			<legend>Insert user:</legend>
+			<label for="username">Username</label>
+			<input type="text" name="username" value="Federico"/>
+			<input type="submit" value="Submit"/>
+		</fieldset>
+		
+	</form>
+	
+	<div>
+		<a href="http://localhost:8081/notification/rest/users/myuser">Get info about my user</a>
+	</div>
+</body>
+</html>
