@@ -1,2 +1,6 @@
-# which matches 'target' in any sub folder
 /target/
+/.settings/
+/.classpath
+/.project
+/bin/
+/.idea/
